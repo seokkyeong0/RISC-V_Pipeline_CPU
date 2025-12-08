@@ -145,7 +145,7 @@ module CPU_Core(
     logic        stall;
 
     ////////////////////////////////////////////
-    // Data Hazard Signals
+    // Control Hazard Signals
     ////////////////////////////////////////////
 
     // EX Stage
