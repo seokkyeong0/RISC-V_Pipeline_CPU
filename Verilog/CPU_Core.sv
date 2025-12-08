@@ -337,7 +337,7 @@ module CPU_Core(
     );
 
     ////////////////////////////////////////////
-    // Data Hazard Detection Unit
+    // Hazard Detection Unit
     ////////////////////////////////////////////
 
     Hazard_Detection U_Hazard_Detection(
