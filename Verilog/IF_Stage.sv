@@ -133,6 +133,9 @@ module Instruction_ROM(
 
     // Read instructions from instr_code.mem
     initial begin
+        for(int i = 0; i < 1024; i++) begin
+            rom[i] <= 32'h00000013;
+        end
         $readmemh("instr_code.mem", rom);
     end
 
