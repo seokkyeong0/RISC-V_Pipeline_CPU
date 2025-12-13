@@ -246,6 +246,7 @@ module Control_Unit (
     end
 
     always_comb begin
+        strb = 3'b000; 
         case (opcode)
             `S_Type: begin
                 case (funct3)
@@ -263,7 +264,6 @@ module Control_Unit (
                     3'b101: strb = 3'b111;
                 endcase
             end
-            default: strb = 3'b000; 
         endcase
     end
 endmodule
