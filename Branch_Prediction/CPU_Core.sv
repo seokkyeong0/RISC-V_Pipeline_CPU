@@ -135,7 +135,7 @@ module CPU_Core(
     // EX Stage
     logic [ 4:0] rs1_EX;
     logic [ 4:0] rs2_EX;
-    logic [ 4:0] memread_EX;
+    logic        memread_EX;
 
     // Forwarding Select
     logic [ 1:0] forward_A;
