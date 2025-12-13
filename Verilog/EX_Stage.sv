@@ -65,7 +65,7 @@ module EX_Stage(
     output logic        pcmuxsel_EX,
 
     // Forwarding Signals
-    output logic [ 4:0] memread_EX,
+    output logic        memread_EX,
 
     // Branch Hazard Signals
     output logic        btaken_EX
