@@ -61,18 +61,13 @@
     
     → MUX 제어 로직 보완으로 해결
     
-
----
-
-### ⚠️ 트러블 슈팅 경험
-
 - Pipeline 제어 신호 타이밍 불일치로 인한 오동작 발생
     
     → Stage별 제어 신호 재정렬 및 Pipeline Register 기준으로 제어 흐름 재구성
     
-- Branch 처리 시 Flush 조건 누락으로 잘못된 명령 실행 문제 발생
+- Branch 처리 시 잘못된 PC 업데이트로 인한 문제 발생
     
-    → Branch 판단 시점 기준으로 Flush 조건 명확화
+    → Flush 조건 명확화 및 Wire 연결 점검 후 개선
     
 
 ---
@@ -83,7 +78,7 @@
 - 2-bit Dynamic Branch Predictor 적용을 통한 **B-Type 명령어 성능 개선**
 - **향후 개선 방향**
     - Clock Frequency 향상을 위한 **6-Stage 구조(IF–ID–EX1–EX2–MEM–WB)** 확장 설계
-    - Branch Predictor 고도화 및 성능 분석 확장
+    - Cache Memory 등 메모리 접근 지연 최소화 모듈 설계
 
 ---
 
